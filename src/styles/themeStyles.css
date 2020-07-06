@@ -1,0 +1,52 @@
+.theme-container{
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 450px;
+    border: 1px solid white;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.theme-img{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.title-theme{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    left: 30%;
+    text-align: center;
+    color: black;
+}
+.information-theme{
+    display: block;
+    width: 100%;
+    left: 30%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;}
+.list-theme{
+    list-style: none;
+    text-align: center;
+}
+.container-theme__lyrics{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.paragraph-lyrics{
+    width: 100%;
+    height: 100px;
+}
+.listen-theme{
+    display: block;
+    width: 100%;
+    height: 25%;
+}
+.title-theme__play{
+    text-align: center;
+}

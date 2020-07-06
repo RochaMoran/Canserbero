@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  background-color: rgb(39, 39, 39);
+  overflow-y: auto;
+}
+.menu{
+  width: 100%;
+  height: 10vh;
+  background-color: #141618;
+}
+.lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.lista li{
+  margin-top: 20px;
+  list-style: none;
+}
+.lista_item{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.lista_item:hover{
+  color: rgb(113, 189, 212);
+}
+.main{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.img-main{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 50px;
+}
+.img-main > img{
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  height: 113%;
+  opacity: .4;
+  border-radius: 10px;
+}
+.paragraph-main{
+  color: rgb(202, 202, 202);
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.name-main{
+  font-size: 1.4rem;
+  top: 35%;
+  font-family: 'Bangers', cursive;
+}
+.frase-main{
+  top: 50%;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
+.footer{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-color: #141618;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph-footer{
+  font-size: 1.2rem;
+  color: rgb(202, 202, 202);
+  font-family: 'Bangers', cursive;
+}
+.frases{
+  width: 300px;
+  height: 340px;
+  transition: border .5s ease-in-out;
+  border: .3px solid rgb(202, 202, 202);
+  border-radius: 15px;
+}
+.title-frases{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 15%;
+  background-color: #14161880;
+  color: rgb(202, 202, 202);
+  text-align: center;
+  position: relative;
+  z-index: 50;
+}
+.frases-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.link-frases{
+  position: absolute;
+  top: -15%;
+  width: 100%;
+  height: 100%;
+}
+.img-frases{
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.paragraph-frases{
+  text-align: center;
+  color: rgb(187, 174, 174);
+  position: absolute;
+  width: 100%;
+  background-color: #14161898;
+  border-radius: 0 0 15px 15px;
+  bottom: 50px;
+  padding-bottom: 10px;
+}
+.frases:hover{
+  border: 1px solid rgb(202, 202, 202);
+
+}
+.frases-container{
+  width: 95%;
+  display: block;
+  margin:auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 305px);
+  gap: 27px;
+}
+.container-tema{
+  width: 80%;
+  height: 300px;
+  background-color: red;
+}
+.section-informacion{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: rgb(202, 202, 202);
+  padding: 30px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  clip-path: polygon(5% 0, 97% 0, 100% 4%, 100% 96%, 95% 100%, 4% 100%, 0 95%, 0 5%);
+  box-shadow: 5px 5px  30px black;
+  font-family: 'Playfair Display', serif;
+}
+.quien-era{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.introduccion{
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
