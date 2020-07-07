@@ -6,12 +6,12 @@ const main = () => (
             <div className="img-main">
                 <img src="https://i2.wp.com/blog.urbanroosters.com/wp-content/uploads/2019/03/banner-canserbero-1.jpg?fit=1280%2C550&ssl=1" alt="Banner"/>
                 <p className="paragraph-main name-main">Canserbero <br></br> (1988-2015)</p>
-                <p className="paragraph-main frase-main"> "No se muere quien se va, Solo se muere el que se olvida"</p>
+                <p className="paragraph-main  sentence-main"> "No se muere quien se va, Solo se muere el que se olvida"</p>
             </div>
         </div>
-        <div className="canserbero-informacion">
-            <section className="section-informacion">
-                <article className="quien-era">
+        <div className="canserbero-information">
+            <section className="section-information">
+                <article className="who-was">
                      <h1>Tirone José González Oramas</h1>
                     <p>
                         Maracay Venezuela <br></br>
@@ -19,7 +19,7 @@ const main = () => (
                         Rapero, poeta, activista social
                     </p>
                 </article>
-                <article className="introduccion">
+                <article className="introduction">
                     <p>
                         Conocido por su nombre artístico como Canserbero; del Canis Cerberus, “perro Cerbero” es un latinismo que adopta el significado de “guardián”, interpretado como guardián de ideales y pensamientos. Ser (“be”): fundamental motivo de Can’S’erbero. Cáncer: derivado del latín (cangrejo) describe la capacidad de extensión de tumores malignos, interpretado como capacidad de extender poesías malditas. Cerbero: guardián de la puerta del Hades (Dios griego del mundo subterráneo) aseguraba que los muertos no salieran y que los vivos no entraran, interpretado como protector de un mundo incomprendido. “Índigo”, “Campesino” o “Chamo González” son entre otros los seudónimos utilizados por Tirone para referirse a él mismo.
                     </p>

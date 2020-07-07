@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 
 const sentence = ({id, album, img, frase}) => (
     <>
-    <div className="frases">
-        <h1 className="title-frases">{album}</h1>
-        <div className="frases-card">
-            <Link className="link-frases" alt="Pulsa para ver mas" to={`/frases/${id}`}>
-                    <img className="img-frases" src={img} alt=""
-                    />
+    <div className="sentences">
+        <h1 className="title-sentences">{album}</h1>
+        <div className="sentences-card">
+            <Link className="link-sentences" alt="Pulsa para ver mas" to={`/frases/${id}`}>
+                <img className="img-sentences" src={img} alt=""
+                />
             </Link>
-            <p className="paragraph-frases">"{frase}"</p>
+            <div>
+                <p className="paragraph-sentences">"{frase}"</p>
+            </div>
         </div>
     </div>
    </>

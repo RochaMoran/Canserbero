@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import Cards from '../molecules/sentence'
+import GridSentences from '../organisms/gridSentences'
 
-class sentenceContent extends Component {
+class gridSentences extends Component {
     constructor(props){
         super(props)
 
@@ -17,10 +17,8 @@ class sentenceContent extends Component {
     render(){
         const { musics } = this.state
         return(
-            <div className="frases-container">
-                {musics.map(m => <Cards key={m.id} id={m.id} album={m.album} img={m.img} frase={m.frase}/>)}
-            </div>
+            <GridSentences musics={musics}/>
         )
     }
 }
-export default sentenceContent
+export default gridSentences

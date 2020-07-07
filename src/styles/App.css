@@ -11,21 +11,22 @@
   height: 10vh;
   background-color: #141618;
 }
-.lista{
+.list{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.lista li{
+.list li{
   margin-top: 20px;
   list-style: none;
 }
-.lista_item{
+.list_item{
   text-decoration: none;
   font-size: 1.2rem;
   color: white;
+  text-transform: uppercase;
 }
-.lista_item:hover{
+.list_item:hover{
   color: rgb(113, 189, 212);
 }
 .main{
@@ -59,7 +60,7 @@
   top: 35%;
   font-family: 'Bangers', cursive;
 }
-.frase-main{
+.sentence-main{
   top: 50%;
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
@@ -79,14 +80,14 @@
   color: rgb(202, 202, 202);
   font-family: 'Bangers', cursive;
 }
-.frases{
+.sentences{
   width: 300px;
   height: 340px;
-  transition: border .5s ease-in-out;
-  border: .3px solid rgb(202, 202, 202);
+  transition: all .2s ease-in-out;
+  border: .3px solid rgb(92, 92, 92);
   border-radius: 15px;
 }
-.title-frases{
+.title-sentences{
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 15%;
@@ -96,37 +97,44 @@
   position: relative;
   z-index: 50;
 }
-.frases-card{
+.sentences-card{
   position: relative;
   width: 100%;
   height: 100%;
 }
-.link-frases{
+.link-sentences{
   position: absolute;
   top: -15%;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-.img-frases{
+.img-sentences{
   border-radius: 15px;
   width: 100%;
   height: 100%;
+  transition: all .4s ease-out;
 }
-.paragraph-frases{
+.img-sentences:hover{
+  transform: scale(1.1);
+  border-radius: 68px;
+}
+.paragraph-sentences{
+  position: absolute;
   text-align: center;
   color: rgb(187, 174, 174);
-  position: absolute;
   width: 100%;
-  background-color: #14161898;
+  background-color: rgba(48, 48, 48, 0.822);
   border-radius: 0 0 15px 15px;
   bottom: 50px;
   padding-bottom: 10px;
 }
-.frases:hover{
-  border: 1px solid rgb(202, 202, 202);
+.sentences:hover{
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px white;
 
 }
-.frases-container{
+.sentences-container{
   width: 95%;
   display: block;
   margin:auto;
@@ -140,7 +148,7 @@
   height: 300px;
   background-color: red;
 }
-.section-informacion{
+.section-information{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -153,12 +161,71 @@
   box-shadow: 5px 5px  30px black;
   font-family: 'Playfair Display', serif;
 }
-.quien-era{
+.who-was{
   width: 100%;
   text-align: center;
   padding-bottom: 30px;
 }
-.introduccion{
+.introduction{
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.main-loader{
+  margin-top: 80px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 40%;
+
+}
+.loader{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border: solid 10px transparent;
+}
+.loader-1{
+  border-top-color:rgb(255, 255, 255) ;
+  border-left-color:rgb(255, 255, 255) ;
+  border-radius: 50%;
+  animation: loader1Animation .6s ease-in infinite;
+}
+.loader-2{
+  top: 65%;
+  left: 65%;
+  width: 70%;
+  height: 70%;
+  border-top-color:rgb(0, 0, 0) ;
+  border-right-color: rgb(0, 0, 0) ;
+  border-radius: 50%;
+  animation: loader1Animation .6s ease-in infinite;
+  z-index: 20;
+}
+@keyframes loader1Animation {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader2Animation {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+.paragraph-loader{
+  position: absolute;
+  bottom: -130px;
+  left: 60%;
+  font-size: 2rem;
+  color: white;
 }
