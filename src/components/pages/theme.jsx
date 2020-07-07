@@ -153,6 +153,7 @@ const theme = ({ match }) => {
                         </div>
                         <div className="listen-theme">
                             <h4 className="title-theme__play">Reproducir Tema</h4>
+                            <audio src="" controls className="audio"></audio>
                         </div>
                     </div>
                     </>

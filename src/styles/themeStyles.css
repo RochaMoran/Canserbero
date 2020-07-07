@@ -2,7 +2,7 @@
     position: relative;
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 7%;
     width: 90%;
     height: 450px;
     border: 1px solid white;
@@ -44,9 +44,43 @@
 }
 .listen-theme{
     display: block;
-    width: 100%;
-    height: 25%;
-}
-.title-theme__play{
+    margin: auto;
+    width: 90%;
     text-align: center;
+}
+@media screen and (max-width: 600px){
+    .theme-container{
+        border: none;
+        width: 100%;
+        margin-top: 10%;
+        height: 90%;
+    }
+    .theme-img{
+        margin: 5%;
+        margin-left: 10%;
+        width: 80%;
+        height: 65vh;
+        border-radius: 15px;
+    }
+    .title-theme{
+        background-color: transparent;
+    }
+    .theme-album{
+        text-shadow: 1px 1px 4px white;
+    }
+    .container-theme__lyrics{
+        height: 100%;
+    }
+    .information-theme, .paragraph-lyrics{
+        display: block;
+        margin: auto;
+        font-size: .8rem;
+        width: 90%;
+    }
+    .audio{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 60%;
+        height: 40px;
+    }
 }

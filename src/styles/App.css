@@ -7,9 +7,12 @@
   overflow-y: auto;
 }
 .menu{
+  z-index: 50;
   width: 100%;
   height: 10vh;
   background-color: #141618;
+  position: fixed;
+  top: 0;
 }
 .list{
   display: flex;
@@ -33,6 +36,7 @@
   width: 100%;
   height: 400px;
   position: relative;
+  top: 10vh;
 }
 .img-main{
   width: 100%;
@@ -95,7 +99,7 @@
   color: rgb(202, 202, 202);
   text-align: center;
   position: relative;
-  z-index: 50;
+  z-index: 20;
 }
 .sentences-card{
   position: relative;
@@ -138,7 +142,7 @@
   width: 95%;
   display: block;
   margin:auto;
-  margin-top: 20px;
+  margin-top: 90px;
   display: grid;
   grid-template-columns: repeat(4, 305px);
   gap: 27px;
@@ -228,4 +232,73 @@
   left: 60%;
   font-size: 2rem;
   color: white;
+}
+.title-musics{
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+
+@media screen and (max-width:600px){
+  .main{
+    height: 260px;
+    top:50px;
+  }
+  .img-main{
+    height: 100%;
+  }
+  .img-main img{
+    width: 100%;
+    height: 124%;
+  }
+  .name-main{
+    font-size: 1rem;
+  }
+  .sentence-main{
+    font-size: .8rem;
+  }
+  .section-information{
+    width: 100%;
+    clip-path: none;
+  }
+  .who-was > h1{
+    font-size: 1rem;
+  }
+  .who-was > p {
+    font-size: .8rem;
+  }
+  .introduction{
+    font-size: .8rem;
+  }
+  .paragraph-footer{
+    font-size: .9rem;
+  }
+  .menu{
+    height: 50px;
+  }
+  .list_item{
+    font-size: .9rem;
+  }
+  .sentences{
+    width: 350px;
+    height: 400px;
+  }
+  .sentences-container{
+    grid-template-columns: 350px;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-loader{
+    left: 25%;
+    margin-top: 120px;
+    width: 100px;
+    height: 100px;
+  }
+  .paragraph-sentences{
+    margin-bottom: 10px;
+    font-size: .8rem;
+  }
+  .paragraph-loader{
+    left: 25%;
+  }
 }
