@@ -7,6 +7,7 @@ const withSentence = (musics, WrappedComponent) => {
         constructor(props){
             super(props)
         }
+        
         render(){
             return this.props[musics].length === 0 
                 ? (

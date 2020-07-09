@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 import GridSentences from '../organisms/gridSentences'
 
-class gridSentences extends Component {
+class sentenceContent extends Component {
     constructor(props){
         super(props)
 
@@ -21,4 +21,4 @@ class gridSentences extends Component {
         )
     }
 }
-export default gridSentences
+export default sentenceContent
