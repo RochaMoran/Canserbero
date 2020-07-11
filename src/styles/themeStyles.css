@@ -1,59 +1,133 @@
 .theme-container{
-    position: relative;
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     margin: auto;
-    margin-top: 7%;
+    margin-top: 5%;
+    width: 80%;
+    height: max-content;
+    background-color: #212121;
+    height: max-content;
+    box-shadow: 5px 5px 10px rgb(44, 44, 44);
+    overflow: hidden;
+}
+.grid-item1{
     width: 90%;
-    height: 450px;
-    border: 1px solid white;
-    background-color: rgb(32, 32, 32);
-    color: white;
+    height: 100%;
+    background-color: black;
+    box-shadow: 5px 5px 10px black;
+}
+.container-img__theme{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .theme-img{
-    width: 30%;
-    height: 100%;
-    float: left;
-}
-.title-theme{
-    display: block;
     width: 100%;
-    background-color: #fff;
-    left: 30%;
-    text-align: center;
-    color: black;
 }
-.information-theme{
-    display: block;
+.grid-item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 50px;
+    padding-right: 50px;
     width: 100%;
-    left: 30%;
+}
+.title-theme,
+.information-theme,
+.sentence,
+.container-theme__lyrics,
+.hear-theme
+,.container-reproductor{
+    color: rgb(179, 178, 177);
+    width: 100%;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 10px;}
+}
 .list-theme{
     list-style: none;
-    text-align: center;
 }
-.container-theme__lyrics{
+.title-theme__play{
+    text-align: center;
+    padding: 15px;
+}
+.list-theme > li{
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+.span{
+    font-weight: 400;
+    color: rgb(179, 178, 177);
+}
+.container-reproductor{
+    display: flexbox;
+}
+.title-theme{
+    background-image: linear-gradient(85deg, #141618, #1c1d1f) ;
+    border-radius: 50px;
+    height: 60px;
+    line-height: 55px;
     width: 100%;
-    height: 150px;
-    text-align: center;
 }
-.paragraph-lyrics{
-    width: 100%;
-    height: 100px;
+.title-theme,
+.title-sentence,
+.title-theme__play,
+.title-verse,
+.list-theme{
+    color: white;
+    font-family: 'Merienda One', cursive;
 }
-.listen-theme{
-    display: block;
-    margin: auto;
-    width: 90%;
+.title-theme{
+    font-size: .8rem;
+}
+.title-sentence,
+.title-theme__play,
+.title-verse,
+.list-theme{
+    font-size: 1rem;
+}
+.paragraph-lyrics,
+.span,
+.paragraph-sentence{
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+}
+.musics{
+    line-height: 200px;
     text-align: center;
+    color: white;
 }
 @media screen and (max-width: 600px){
     .theme-container{
-        border: none;
+        grid-template-columns: 100%;
         width: 100%;
         margin-top: 10%;
         height: 90%;
+    }
+    .grid-item1, .grid-item2{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .span{
+        font-size: .9rem;
+    }
+    .title-theme{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+    .title-theme,
+    .title-sentence,
+    .title-theme__play,
+    .title-verse,
+    .theme-album{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .grid-item2{
+        margin-top: 5%;
     }
     .theme-img{
         margin: 5%;
@@ -62,25 +136,23 @@
         height: 65vh;
         border-radius: 15px;
     }
-    .title-theme{
-        background-color: transparent;
-    }
-    .theme-album{
-        text-shadow: 1px 1px 4px white;
-    }
     .container-theme__lyrics{
         height: 100%;
-    }
-    .information-theme, .paragraph-lyrics{
-        display: block;
-        margin: auto;
-        font-size: .8rem;
-        width: 90%;
     }
     .audio{
         margin-top: 10px;
         margin-bottom: 30px;
         width: 60%;
         height: 40px;
+    }
+    .sentense,
+    .paragraph-lyrics{
+        font-size: 1rem;
+    }
+    .information-theme,
+    .sentence,
+    .container-reproductor,
+    .container-theme__lyrics{
+        margin-bottom: 10px;
     }
 }

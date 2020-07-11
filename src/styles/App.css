@@ -84,84 +84,18 @@
   color: rgb(202, 202, 202);
   font-family: 'Bangers', cursive;
 }
-.sentences{
-  width: 300px;
-  height: 340px;
-  transition: all .2s ease-in-out;
-  border: .3px solid rgb(92, 92, 92);
-  border-radius: 15px;
-}
-.title-sentences{
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 15%;
-  background-color: #14161880;
-  color: rgb(202, 202, 202);
-  text-align: center;
-  position: relative;
-  z-index: 20;
-}
-.sentences-card{
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.link-sentences{
-  position: absolute;
-  top: -15%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.img-sentences{
-  border-radius: 15px;
-  width: 100%;
-  height: 100%;
-  transition: all .4s ease-out;
-}
-.img-sentences:hover{
-  transform: scale(1.1);
-  border-radius: 68px;
-}
-.paragraph-sentences{
-  position: absolute;
-  text-align: center;
-  color: rgb(187, 174, 174);
-  width: 100%;
-  background-color: rgba(48, 48, 48, 0.822);
-  border-radius: 0 0 15px 15px;
-  bottom: 50px;
-  padding-bottom: 10px;
-}
-.sentences:hover{
-  border: 1px solid rgb(255, 255, 255);
-  box-shadow: 2px 2px 5px white;
-
-}
-.sentences-container{
-  width: 95%;
-  display: block;
-  margin:auto;
-  margin-top: 90px;
-  display: grid;
-  grid-template-columns: repeat(4, 305px);
-  gap: 27px;
-}
 .container-tema{
   width: 80%;
   height: 300px;
-  background-color: red;
 }
 .section-information{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
   background-color: rgb(202, 202, 202);
   padding: 30px;
   margin-top: 100px;
   margin-bottom: 50px;
-  clip-path: polygon(5% 0, 97% 0, 100% 4%, 100% 96%, 95% 100%, 4% 100%, 0 95%, 0 5%);
   box-shadow: 5px 5px  30px black;
   font-family: 'Playfair Display', serif;
 }
@@ -238,8 +172,115 @@
   margin-top: 100px;
   color: white;
 }
+.sentences-container{
+  width: 100%;
+  display: block;
+  margin-top: 90px;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(4, 25%);
+  row-gap: 50px;
+}
+.sentences{
+  display: block;
+  border: 1px solid #53575A;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 65vh;
+}
+.sentences-img,
+.link-sentences,
+.img-sentences,
+.information-sentence{
+  width: 100%;
+  height: 95%;
+}
+.img-sentences{
+  cursor: pointer;
+}
+.link-sentences{
+  position: absolute;
+  top: 0;
+  text-decoration: none;
+  transform: translateX(-100%);
+}
+.information-sentence{
+  background-color: #000000;
+  font-family: 'Playfair Display', serif;
+  color: #c4bfbf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.paragraph-sentences{
+  font-size: .9rem;
+  width: 90%;
+}
+.sentences:hover > .link-sentences{
+  animation: informationSentence .8s ease-out;
+  animation-fill-mode: forwards;
+}
+.container-paragraph__theme{
+  position: absolute;
+  display: flex;
+  border: 1px solid #53575A;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  color: #c4bfbf;
 
+}
+.paragraph-theme{
+  font-family: 'Bangers', cursive;
+}
+@keyframes informationSentence{
+  0%{
+    transform: translateX(-100%);
+  } 
+  100%{
+    transform: translateX(0);
+  } 
+}
 @media screen and (max-width:600px){
+  .information-sentence{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(0, 0, 0);
+  }
+  .title-sentences{
+    width: 100%;
+    border-bottom: 1px solid #c4bfbf;
+  }
+  .paragraph-sentences{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .link-sentences{
+    transform: translateX(0);
+    height: 100%;
+  }
+  .container-paragraph__theme{
+    display: none;
+  }
+  .sentences-img{
+    position: absolute;
+    bottom: -20px;
+    height: 90%;
+    background-color: black;
+  }
+  .img-sentences{
+    object-fit: contain;
+  }
+  @keyframes informationSentence{}
   .main{
     height: 260px;
     top:50px;
@@ -280,7 +321,7 @@
     font-size: .9rem;
   }
   .sentences{
-    width: 350px;
+    width: 95%;
     height: 400px;
   }
   .sentences-container{
