@@ -1,14 +1,21 @@
 import React from 'react'
-import Cards from '../molecules/sentence'
+import Cards from '../molecules/Sentence'
 import WithSentence from '../HOC/withSentence.js'
 
-const gridSentences = ({musics}) => {
+const GridSentences = ({musics}) => {
     return(
         <div className="sentences-container">
             {
-                 musics.map(m => <Cards key={m.id} id={m.id} album={m.album} img={m.img} frase={m.frase} tema={m.tema}/>)
+                 musics.map(m => <Cards 
+                                        key={m.id}
+                                        id={m.id}
+                                        album={m.album}
+                                        img={m.img}
+                                        frase={m.frase}
+                                        tema={m.tema}
+                                    />)
             }
         </div>
     )
 }
-export default WithSentence("musics", gridSentences)
+export default WithSentence("musics", GridSentences)

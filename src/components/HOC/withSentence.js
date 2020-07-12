@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 
 const withSentence = (musics, WrappedComponent) => {
-
    return class WithSentence extends Component {
 
         constructor(props){

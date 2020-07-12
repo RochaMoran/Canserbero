@@ -1,6 +1,6 @@
 import React from 'react'
 
-const main = () => (
+const Main = () => (
     <>
         <div className="main">
             <div className="img-main">
@@ -12,7 +12,7 @@ const main = () => (
         <div className="canserbero-information">
             <section className="section-information">
                 <article className="who-was">
-                     <h1>Tirone José González Oramas</h1>
+                    <h1>Tirone José González Oramas</h1>
                     <p>
                         Maracay Venezuela <br></br>
                         (11 de marzo de 1988 a 20 de enero de 2015) <br></br>
@@ -66,4 +66,4 @@ const main = () => (
         </div>
    </>
 )
-export default main
+export default Main

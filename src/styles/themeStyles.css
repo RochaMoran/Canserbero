@@ -5,15 +5,15 @@
     margin-top: 5%;
     width: 80%;
     height: max-content;
-    background-color: #212121;
+    background-color: #080808;
     height: max-content;
-    box-shadow: 5px 5px 10px rgb(44, 44, 44);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
     overflow: hidden;
 }
 .grid-item1{
     width: 90%;
     height: 100%;
-    background-color: black;
+    background-color: #080808;
     box-shadow: 5px 5px 10px black;
 }
 .container-img__theme{
@@ -64,7 +64,7 @@
     display: flexbox;
 }
 .title-theme{
-    background-image: linear-gradient(85deg, #141618, #1c1d1f) ;
+    background-color: #1b1a1a;
     border-radius: 50px;
     height: 60px;
     line-height: 55px;
@@ -105,7 +105,11 @@
         margin-top: 10%;
         height: 90%;
     }
+    .grid-item1{
+        border-bottom: 1px solid rgb(202, 202, 202);
+    }
     .grid-item1, .grid-item2{
+        box-shadow: none;
         width: 100%;
         padding-left: 0;
         padding-right: 0;

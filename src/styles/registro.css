@@ -1,0 +1,108 @@
+.checkIn-container{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 500px;
+    background-color: rgba(26, 25, 25, 0.541);
+    border-radius: 10px;
+}
+.title-logIn{
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    font-family: 'Merienda One', cursive;
+    text-transform: uppercase;
+    color: rgb(185, 177, 177);
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lbl{
+    position: relative;
+    left: -90px;
+    top: 30px;
+    margin: 5px;
+    z-index: 30;
+    color: rgb(143, 138, 138);
+}
+.lbl-password{
+    left: -120px;
+}
+.inputTxt{
+    width: 70%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(17, 14, 14);
+    border-left: 1px solid rgb(29, 25, 25);
+    border-right: 1px solid rgb(36, 34, 34);
+    border-radius: 5px;
+    background-color: rgba(75, 75, 75, 0.479);
+    color: rgb(189, 183, 183);
+    padding: 15px;
+    font-size: .9rem;
+}
+.input-submit{
+    width: 70%;
+    margin: 25px;
+    height: 35px;
+    background-color: rgb(8, 8, 8);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(185, 177, 177);
+}
+.logIn-section{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paragraph-logIn{
+    color: rgb(185, 177, 177);
+}
+.animation{
+    animation: animationLbl 1s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes animationLbl{
+    0%{
+        transform: translateY(0);
+        font-size: 1rem;
+    }
+    100%{   
+        transform: translateY(-140%);
+        font-size: .9rem;
+        left: -110px;
+    }
+}
+@media screen and (max-width: 600px){
+    .checkIn-container{
+        width: 80%;
+    }
+    .lbl{
+        left: -60px;
+    }
+    .lbl-password{
+        left: -80px;
+    }
+    @keyframes animationLbl{
+        0%{
+            transform: translateY(0);
+            font-size: 1rem;
+        }
+        100%{   
+            transform: translateY(-140%);
+            font-size: .9rem;
+            left: -80px;
+        }
+    }
+}

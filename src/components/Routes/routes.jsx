@@ -1,12 +1,14 @@
 import React from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import MenuNav from '../organisms/menuNav'
-import Main from '../pages/main'
-import sentences from '../pages/sentenceContent'
+import MenuNav from '../organisms/MenuNav'
+import Main from '../pages/Main'
+import sentences from '../pages/SentenceContent'
 import musics from '../pages/musics'
-import theme from '../pages/informationTheme'
+import theme from '../pages/InformationTheme'
+import Registro from '../pages/Registro'
+import LogIn from '../pages/LogIn'
 
-const routes = () =>{
+const Routes = () =>{
   return(
       <Router >
         <MenuNav />
@@ -15,6 +17,8 @@ const routes = () =>{
           <Route path="/frases/:id" exact component={theme}/>
           <Route path="/frases" component={sentences} /> 
           <Route path="/musics" component={musics} />
+          <Route path="/registro" component={Registro} />
+          <Route path="/inicioSesion" component={LogIn} />
           <Route component = { () => (<h1>Error 404</h1>)} />
         </Switch>
       </Router>
@@ -22,4 +26,4 @@ const routes = () =>{
   )
 }
 
-export default routes
+export default Routes

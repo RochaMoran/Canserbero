@@ -3,24 +3,26 @@
   padding: 0;
 }
 :root{
-  background-color: rgb(39, 39, 39);
+  background-color: #080808;
   overflow-y: auto;
 }
 .menu{
   z-index: 50;
   width: 100%;
   height: 10vh;
-  background-color: #141618;
+  background-color: #080808;
   position: fixed;
+  border-bottom: 1px solid rgb(31, 30, 30);
   top: 0;
 }
 .list{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 .list li{
   margin-top: 20px;
+  margin-right: 15px;
   list-style: none;
 }
 .list_item{
@@ -73,7 +75,8 @@
   position: relative;
   width: 100%;
   height: 30vh;
-  background-color: #141618;
+  background-color: #080808;
+  border-top: 1px solid rgb(39, 38, 38);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,7 +283,11 @@
   .img-sentences{
     object-fit: contain;
   }
-  @keyframes informationSentence{}
+  @keyframes informationSentence{
+    0%{
+      transform: translateX(0);
+    }
+  }
   .main{
     height: 260px;
     top:50px;

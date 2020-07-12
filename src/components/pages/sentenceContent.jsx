@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
-import GridSentences from '../organisms/gridSentences'
+import GridSentences from '../organisms/GridSentences'
 
-class sentenceContent extends Component {
+class SentenceContent extends Component {
     constructor(props){
         super(props)
 
@@ -10,15 +10,21 @@ class sentenceContent extends Component {
             musics:[]
         }
     }
+
     componentDidMount(){
-        axios.get('https://my-json-server.typicode.com/RochaMoran/musics/get')
+        const url = 'https://my-json-server.typicode.com/RochaMoran/musics/get'
+
+        axios.get(url)
             .then(resp => this.setState({musics:resp.data}))
     }
+    
     render(){
+
         const { musics } = this.state
+
         return(
             <GridSentences musics={musics}/>
         )
     }
 }
-export default sentenceContent
+export default SentenceContent

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const sentence = ({id, album, img, frase, tema}) => (
+const Sentence = ({id, album, img, frase, tema}) => (
     <>
     <div className="sentences" id="sentences">
         <div className="sentences-img">
-                <img className="img-sentences" src={img} alt=""/>
+            <img className="img-sentences" src={img} alt=""/>
         </div>
         <Link className="link-sentences" alt="Pulsa para ver mas" to={`/frases/${id}`}>
             <div className="information-sentence" id="informationSentence">
@@ -19,4 +19,4 @@ const sentence = ({id, album, img, frase, tema}) => (
     </div>
    </>
 )
-export default sentence
+export default Sentence
