@@ -2,10 +2,6 @@ import React, {Component} from 'react'
 
 const withSentence = (musics, WrappedComponent) => {
    return class WithSentence extends Component {
-
-        constructor(props){
-            super(props)
-        }
         
         render(){
             return this.props[musics].length === 0 

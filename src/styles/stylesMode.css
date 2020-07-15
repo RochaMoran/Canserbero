@@ -1,0 +1,36 @@
+.footerActive{
+    background-color: rgb(218, 216, 216);
+    border-top: 1px solid rgb(122, 118, 118);
+    color: black;
+}
+.MainActive{
+    background-color: #fff;
+}
+.color-black{
+    color: black;
+}
+.MenuActive{
+    background-color: rgb(218, 216, 216);
+    border-bottom: 1px solid rgb(122, 118, 118);
+}
+.blackColor{
+    color: black;
+}
+.sentencesActive{
+    background-color: rgb(218, 216, 216);
+    color: black;
+}
+.logIn{
+    background-color: rgb(218, 216, 216);
+    color: black;
+}
+.themeContainerBack{
+    background-color: rgb(218, 216, 216);
+    color: black;
+    width: 110%;
+    margin-left: -50px;
+    padding-left: 30px;
+}
+.Black{
+    background-color: black;
+}

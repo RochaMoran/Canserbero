@@ -1,7 +1,6 @@
 import React from 'react';
 import useMusics from '../gustomHooks/useMusics'
 import Musics from '../molecules/Musics'
-import "../../styles/themeStyles.css"
 
 const InformationTheme = ({ match }) =>{
  
@@ -23,14 +22,14 @@ const InformationTheme = ({ match }) =>{
                     </div>
                     <div className="information-theme">
                         <ul className="list-theme">
-                            <li>Tema: <br></br>
-                                <span className="span">{musics.tema}</span>
+                            <li className="li1" id="liTheme">Tema: <br></br>
+                                <span className="span musica">{musics.tema}</span>
                             </li>
-                            <li>Artista(s): <br></br> 
-                                <span className="span">{musics.artista}</span>
+                            <li className="li2">Artista(s): <br></br> 
+                                <span className="span artista">{musics.artista}</span>
                             </li>
-                            <li>Fecha de Lanzamiento: <br></br>
-                                <span className="span">{musics.lanzamiento}</span>
+                            <li className="li3">Fecha de Lanzamiento: <br></br>
+                                <span className="span lanzamiento">{musics.lanzamiento}</span>
                             </li>
                         </ul>
                     </div>

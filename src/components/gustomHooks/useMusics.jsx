@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
-const useMusics = id =>{
-    const [musics, setMusics] = useState({})
-    const url = `https://my-json-server.typicode.com/RochaMoran/musics/get/${id}`
+const useMusics = id  =>{
+   
+    const [musics, setMusics] = useState({});
+    let url = `https://my-json-server.typicode.com/RochaMoran/musics/get/${id}`;
 
     useEffect( () => {
         axios.get(url)

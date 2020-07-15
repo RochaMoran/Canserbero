@@ -1,11 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import '../../styles/registro.css'
 
 const labelAnimation = (e, lblName) => {
     const nameLbl = document.getElementById(lblName)
 
-    if(Cambio(e).trim().length == 0)
+    if(Cambio(e).trim().length === 0)
         nameLbl.classList.add('animation')
 
 }
@@ -17,7 +16,7 @@ const Cambio = (e) =>{
 const QuitarAnimation = (e, lblName) => {
     const nameLbl = document.getElementById(lblName)
 
-    if(Cambio(e).trim().length == 0)
+    if(Cambio(e).trim().length === 0)
         nameLbl.classList.remove('animation')
 
 }
@@ -28,13 +27,13 @@ const Registro = () =>{
         <div className="checkIn-container">
             <h1 className="title-logIn">Registrarse</h1>
             <form action="/home" name="form" className="form">
-                <label htmlFor="" className="lbl lbl-name" id="lblName">Nombre de Usuario</label>
-                <input type="text" name="nameInput" id="" className="inputTxt input-name"
+                <label htmlFor="" className="lbl lbl-name" id="">Nombre de Usuario</label>
+                <input type="text" name="nameInput" id="inputNameId" className="inputTxt input-name"
                     onFocus={e => labelAnimation(e, "lblName")}
                     onBlur={e => QuitarAnimation(e, "lblName")}
                 />
                 <label htmlFor="" className="lbl lbl-password" id="lblPassword">Contraseña</label>
-                <input type="password" name="passwordInput" id="" className="inputTxt input-password"
+                <input type="password" name="passwordInput" id="inputPasswordId" className="inputTxt input-password"
                     onFocus={ e => labelAnimation(e, "lblPassword")}
                     onBlur={e => QuitarAnimation(e, "lblPassword")}
                 />

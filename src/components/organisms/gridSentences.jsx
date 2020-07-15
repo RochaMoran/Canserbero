@@ -4,7 +4,8 @@ import WithSentence from '../HOC/withSentence.js'
 
 const GridSentences = ({musics}) => {
     return(
-        <div className="sentences-container">
+        <>
+        <div className="sentences-container" id="containerSentences">
             {
                  musics.map(m => <Cards 
                                         key={m.id}
@@ -16,6 +17,7 @@ const GridSentences = ({musics}) => {
                                     />)
             }
         </div>
+        </>
     )
 }
 export default WithSentence("musics", GridSentences)

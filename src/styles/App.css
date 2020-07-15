@@ -177,8 +177,10 @@
 }
 .sentences-container{
   width: 100%;
+  position: relative;
   display: block;
-  margin-top: 90px;
+  top: 90px;
+  margin-bottom: 50px;
   display: grid;
   justify-content: start;
   grid-template-columns: repeat(4, 25%);
@@ -252,7 +254,44 @@
     transform: translateX(0);
   } 
 }
+.mode-color{
+  position: fixed;
+  z-index: 60;
+  width: 60px;
+  height: 25px;
+  top: 20px;
+  left: 50px;
+  border-radius: 100px;
+  background-color: rgb(43, 40, 40);
+}
+.item-color__mode{
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.Active{
+  animation: AnimationColor .5s ease-out;
+  animation-fill-mode: forwards;
+}
+.ColorActive{
+  background-color: #fff;
+}
+@keyframes AnimationColor {
+  0%{
+    transform: translateX(0);
+    background-color: #fff;
+  }
+  100%{
+    transform: translateX(155%);
+    background-color: #000;
+  }
+}
 @media screen and (max-width:600px){
+  .mode-color{
+    left: 2px;
+    top: 12px;
+  }
   .information-sentence{
     width: 100%;
     height: max-content;

@@ -59,11 +59,6 @@ const Main = () => (
                 </article>
             </section>
         </div>
-        <div className="footer">
-            <p className="paragraph-footer">
-                 Steven Rocha© - 2020
-            </p>
-        </div>
    </>
 )
 export default Main

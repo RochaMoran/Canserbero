@@ -1,17 +1,19 @@
 .checkIn-container{
     display: block;
     position: relative;
-    margin-top: 100px;
+    top: 80px;
     margin-left: auto;
     margin-right: auto;
     width: 35%;
     height: 500px;
     background-color: rgba(26, 25, 25, 0.541);
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 .title-logIn{
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-size: 1.2rem;
     font-family: 'Merienda One', cursive;
     text-transform: uppercase;
@@ -25,17 +27,17 @@
 }
 .lbl{
     position: relative;
-    left: -90px;
+    left: -100px;
     top: 30px;
     margin: 5px;
     z-index: 30;
     color: rgb(143, 138, 138);
 }
 .lbl-password{
-    left: -120px;
+    left: -125px;
 }
 .inputTxt{
-    width: 70%;
+    width: 75%;
     height: 35px;
     outline: none;
     border: none;
@@ -89,10 +91,11 @@
         width: 80%;
     }
     .lbl{
-        left: -60px;
+        left: -50px;
+        font-size: .9rem;
     }
     .lbl-password{
-        left: -80px;
+        left: -70px;
     }
     @keyframes animationLbl{
         0%{

@@ -6,6 +6,7 @@ import sentences from '../pages/SentenceContent'
 import musics from '../pages/musics'
 import theme from '../pages/InformationTheme'
 import Registro from '../pages/Registro'
+import Footer from '../molecules/Footer'
 import LogIn from '../pages/LogIn'
 
 const Routes = () =>{
@@ -21,6 +22,7 @@ const Routes = () =>{
           <Route path="/inicioSesion" component={LogIn} />
           <Route component = { () => (<h1>Error 404</h1>)} />
         </Switch>
+        <Footer />
       </Router>
 
   )

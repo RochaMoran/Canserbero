@@ -13,7 +13,7 @@ const Sentence = ({id, album, img, frase, tema}) => (
                 <p className="paragraph-sentences">"{frase}"</p>
             </div>
         </Link>
-        <div className="container-paragraph__theme">
+        <div className="container-paragraph__theme" id="paragraphSentence">
             <p className="paragraph-theme">Frase del tema "{tema}"</p>
         </div>
     </div>

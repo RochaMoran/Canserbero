@@ -1,14 +1,16 @@
 .theme-container{
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2, 50%);
     margin: auto;
-    margin-top: 5%;
+   top: 90px;
     width: 80%;
     height: max-content;
     background-color: #080808;
     height: max-content;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     overflow: hidden;
+    margin-bottom: 50px;
 }
 .grid-item1{
     width: 90%;
@@ -98,7 +100,18 @@
     text-align: center;
     color: white;
 }
+.footer{
+    top: 100px;
+}
+
 @media screen and (max-width: 600px){
+    .container-img__theme{
+        width: 100%;
+        height: 100%;
+    }
+    .theme-img{
+        object-fit: cover;
+    }
     .theme-container{
         grid-template-columns: 100%;
         width: 100%;
